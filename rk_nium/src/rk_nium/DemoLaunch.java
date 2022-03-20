@@ -41,7 +41,7 @@ public class DemoLaunch {
 		WebElement login=driver.findElement(By.name("login"));
 		login.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
