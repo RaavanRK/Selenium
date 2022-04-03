@@ -1,6 +1,7 @@
 package rk_nium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByPartialLinkText;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,8 +39,13 @@ public class DemoLaunch {
 		WebElement pass=driver.findElement(By.name("pass"));
 		pass.sendKeys("hulcut");	
 		
-		WebElement login=driver.findElement(By.name("login"));
-		login.click();
+		WebElement fp= driver.findElement(By.linkText("Forgotten Password?"));
+		fp.click();	//using full link text
+		WebElement fp2=driver.findElement(By.partialLinkText("Forgotten"));
+		fp2.click();	//using partial link text
+		
+	//	WebElement login=driver.findElement(By.name("login"));
+	//	login.click();
 		
 		Thread.sleep(5000);
 		driver.quit();

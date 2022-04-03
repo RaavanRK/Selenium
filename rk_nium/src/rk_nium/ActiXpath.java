@@ -4,13 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LauchActi {
-
+public class ActiXpath {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
 		ChromeDriver chdr=new ChromeDriver();
 		chdr.manage().window().maximize();
-		chdr.get("http://190.210.184.180/login.do");
+		chdr.get("https://demo.actitime.com/login.do");
 		
 		WebElement uName = chdr.findElement(By.name("username"));
 		uName.sendKeys("admin");
