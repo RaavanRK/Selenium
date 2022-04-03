@@ -1,0 +1,38 @@
+h1{	background-color:blue;
+	color:rgb(41,2,59)	
+	border-color:red;
+	border-width:thick;
+	border-style:dotted;
+	width:fit-content;
+	}
+
+h2{	color:#b1eb13;		
+	background-color:green;
+	border:orange 20px double;
+	}
+h3{	color:rgba(21,191,95,1);
+	border:yellow 15px groove;
+	}
+
+h4{	color:#a86232;	}
+
+#demo{
+	color:blue;
+	background-color:green;
+	border:red 15px groove;
+	}
+
+.a{
+	color:blue;
+	background-color:green;
+	border:pink 20px double;
+	}
+
+body{	
+	background:url(lata.jpg);   <! background:ulr(https://i.pinimg.com/as.jpg);   >
+	
+	background-repeat:no-repeat;
+	background-size:cover;
+	<! background-size:1000px;  its a comment >
+
+	}

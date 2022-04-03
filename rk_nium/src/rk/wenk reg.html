@@ -1,0 +1,59 @@
+<html>
+<head><title>wenk reg</title>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<form action="Wenkipedia.html">
+Fname:<input type="text" name="fname" placeholder="fname" pattern="[A-Za-z]{2,}" required/>
+Lname:<input type="text" name="lname" placeholder="lname" required/>
+<br></br>
+Password:<input type="password" name="pass" pattern=".{4,7}" required/>
+<br></br>
+Confirm Password:<input type="password" id="confpass" pattern="[0-9]{5,8}" required/>
+<br></br>
+Email:<input type="email" id="email" name="email"/>
+<br></br>
+
+<h4>Gender</h4>
+female:<input type="radio" name="gender" value="female"/>
+male:<input type="radio" name="gender" value="male" />
+other:<input type="radio" name="gender" value="other" />
+<br></br>
+<h4>Date of birth</h4>
+<select id="Mon" name="mon">
+	<Option value="jan">jan</Option>
+	<Option value="feb">feb</Option>
+	<Option value="mar">mar</Option>
+	<Option value="apr">apr</Option>
+	<Option value="may">may</Option>
+	<Option value="jun">jun</Option>
+	<Option value="jul">jul</Option>
+</select>
+<select id="day" name="day">
+	<Option value="1">1</Option>
+	<Option value="2">2</Option>
+	<Option value="3">3</Option>
+	<Option value="4">4</Option>
+	<Option value="5">5</Option>
+</select>
+<select id="Year" name="Year">
+	<Option value="2021">2020</Option>
+	<Option value="2022">2022</Option>
+	<Option value="2023">2023</Option>
+	<Option value="2024">2024</Option>
+	<Option value="2025">2025</Option>
+	<Option value="2025">2025</Option>
+</select>
+<br></br>
+Permanent:<input type="checkbox" name="permant" id="permant"/>
+Temp:	<input type="checkbox" name="temp" id="temp" />
+<br></br>
+
+<input type="submit" name="submt" value="sign up"/>
+<br></br>
+
+</form>
+
+
+</body>
+</html>
